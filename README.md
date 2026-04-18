@@ -1,58 +1,136 @@
-## 🌐 Responsive Agency Website
+# 🔥 Forge Studio — Portfolio Website
 
-https://melodious-cactus-1ab6e1.netlify.app/  
+A modern, responsive portfolio website built to showcase creative services, case studies, and brand identity work.
+Designed with a focus on **minimalism, typography, and structured layouts**.
 
-This project is a fully responsive static website built using **HTML and CSS**, inspired by modern agency-style UI designs.
+---
 
-## 🚀 Features
+## 🌐 Live Preview
 
-* Responsive design (mobile, tablet, desktop)
-* Clean and modern UI
-* Structured layout using Flexbox
-* Multi-page navigation (Home, Services, Case Studies, Contact)
-* Reusable components and sections
+> Add your deployed link here
+> `https://your-website-link.com`
+
+---
+
+## ✨ Features
+
+* 🎯 Clean and modern UI inspired by high-end agency websites
+* 📱 Fully responsive design (mobile, tablet, desktop)
+* 🧩 Structured multi-page layout:
+
+  * Home
+  * Services
+  * Case Studies
+  * Contact
+* 🎬 Service showcase with image + text layout
+* 🧠 Accordion-style services (expandable sections)
+* 📊 Case study cards with visuals
+* 🚀 Smooth navigation and reusable components
+* 🎨 Consistent design system (colors, spacing, typography)
+
+---
 
 ## 🛠️ Tech Stack
 
-* HTML5
-* CSS3 (Flexbox, Media Queries)
+* **HTML5**
+* **CSS3 (Custom styling)**
+* **JavaScript (Vanilla JS)**
+
+---
 
 ## 📁 Project Structure
 
 ```
-project/
+static-web/
 │
-├── index.html
+├── css/
+│   ├── base.css
+│   ├── home.css
+│   ├── services.css
+│   ├── case-studies.css
+│   └── contact.css
+│
 ├── pages/
 │   ├── services.html
 │   ├── case-studies.html
 │   ├── contact.html
 │
-├── css/
-│   ├── global.css
-│   ├── home.css
-│   ├── services.css
-│
 ├── images/
-└── js/
+│   ├── hero-img.jpg
+│   ├── project1.jpg
+│   ├── project2.jpg
+│   ├── project3.jpg
+│   └── ...
+│
+├── js/
+│   └── app.js
+│
+└── index.html
 ```
 
-## 📱 Responsiveness
+---
 
-The layout adapts across:
+## 🚀 Getting Started
 
-* Mobile devices
-* Tablets
-* Desktop screens
+### 1. Clone the repository
 
-## 💡 Learning Outcomes
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
 
-* Understanding responsive design principles
-* Using Flexbox for layout
-* Structuring scalable frontend projects
+### 2. Open in browser
 
-## 📌 Note
+Simply open:
 
-This project was built as part of a frontend development task and focuses on UI implementation and responsiveness.
+```
+index.html
+```
+
+Or use **Live Server** in VS Code for better development experience.
+
+---
+
+## 💡 Key Highlights
+
+* Built from scratch without frameworks to strengthen core frontend skills
+* Focus on **layout precision and spacing consistency**
+* Reusable components like:
+
+  * Navigation bar
+  * CTA section
+  * Footer
+* Clean separation of concerns (HTML / CSS / JS)
+
+---
+
+## ⚠️ Notes
+
+* Images are locally stored — ensure correct relative paths (`../images/...`)
+* Avoid using `<br>` for spacing — layout is controlled via CSS
+* Designed for learning + portfolio demonstration purposes
+
+---
+
+## 📌 Future Improvements
+
+* Add animations (GSAP / Framer Motion style effects)
+* Convert to React for component-based structure
+* Add backend contact form (Node.js / Firebase)
+* Improve accessibility (ARIA, semantic tags)
+
+---
+
+## 👩‍💻 Author
+
+**Anushka Mukherjee**
+
+* GitHub: https://github.com/anushkaverse10
+* LinkedIn: (add your link)
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ and feel free to fork it!
 
 ---
