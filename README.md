@@ -1,36 +1,36 @@
-# 🔥 Forge Studio — Portfolio Website
+# Forge Studio — Portfolio Website
 
 A modern, responsive portfolio website built to showcase creative services, case studies, and brand identity work.
 Designed with a focus on **minimalism, typography, and structured layouts**.
 
 ---
 
-## 🌐 Live Preview
+## Live Preview
 
 deployed link :
 https://forge-studio-static-web-gdg-project.netlify.app/
 
 ---
 
-## ✨ Features
+##  Features
 
-* 🎯 Clean and modern UI inspired by high-end agency websites
-* 📱 Fully responsive design (mobile, tablet, desktop)
-* 🧩 Structured multi-page layout:
+*  Clean and modern UI inspired by high-end agency websites
+*  Fully responsive design (mobile, tablet, desktop)
+*  Structured multi-page layout:
 
   * Home
   * Services
   * Case Studies
   * Contact
-* 🎬 Service showcase with image + text layout
-* 🧠 Accordion-style services (expandable sections)
-* 📊 Case study cards with visuals
-* 🚀 Smooth navigation and reusable components
-* 🎨 Consistent design system (colors, spacing, typography)
+*  Service showcase with image + text layout
+*  Accordion-style services (expandable sections)
+*  Case study cards with visuals
+*  Smooth navigation and reusable components
+*  Consistent design system (colors, spacing, typography)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **HTML5**
 * **CSS3 (Custom styling)**
@@ -38,7 +38,7 @@ https://forge-studio-static-web-gdg-project.netlify.app/
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 static-web/
@@ -67,51 +67,7 @@ static-web/
 │
 └── index.html
 ```
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-```
-
-### 2. Open in browser
-
-Simply open:
-
-```
-index.html
-```
-
-Or use **Live Server** in VS Code for better development experience.
-
----
-
-## 💡 Key Highlights
-
-* Built from scratch without frameworks to strengthen core frontend skills
-* Focus on **layout precision and spacing consistency**
-* Reusable components like:
-
-  * Navigation bar
-  * CTA section
-  * Footer
-* Clean separation of concerns (HTML / CSS / JS)
-
----
-
-## ⚠️ Notes
-
-* Images are locally stored — ensure correct relative paths (`../images/...`)
-* Avoid using `<br>` for spacing — layout is controlled via CSS
-* Designed for learning + portfolio demonstration purposes
-
----
-
-## 📌 Future Improvements
+## Future Improvements
 
 * Add animations (GSAP / Framer Motion style effects)
 * Convert to React for component-based structure
@@ -120,12 +76,9 @@ Or use **Live Server** in VS Code for better development experience.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
-**Anushka Mukherjee**
-
-* GitHub: https://github.com/anushkaverse10
-* LinkedIn: (add your link)
+**Anushka Mukherjee*
 
 ---
 
