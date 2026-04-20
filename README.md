@@ -15,19 +15,33 @@ The website is designed to simulate a modern digital agency landing experience, 
 
 
 static-web/
+
 ├── index.html
+
 ├── pages/
+
 │   ├── services.html
+
 │   ├── case-studies.html
+
 │   └── contact.html
+
 ├── css/
+
 │   ├── base.css
+
 │   ├── home.css
+
 │   ├── services.css
+
 │   ├── case-studies.css
+
 │   └── contact.css
+
 ├── js/
+
 │   └── app.js
+
 └── images/
 
 structure, responsive design, and interactive UI without using any frameworks.
