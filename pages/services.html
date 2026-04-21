@@ -1,134 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services — Forge Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Lora:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/services.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — NEXUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
 
-  <header class="nav" id="siteNav">
+  <nav class="navbar" id="navbar">
     <div class="nav-wrap">
-      <a href="../index.html" class="logo"><span class="logo-box">F</span>FORGE</a>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="../index.html" class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link is-active">Services</a></li>
-        <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <a href="../index.html" class="logo">NEXUS</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="contact.html" class="nav-cta">Start a Project ↗</a>
-      <button class="burger" id="burgerBtn" onclick="openMenu()" aria-label="Open menu">
+      <a href="contact.html" class="btn-nav">Start a Project</a>
+      <button class="burger" id="burger" onclick="toggleNav()">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mobile-panel" id="mobilePanel">
-      <button class="mobile-close" onclick="closeMenu()">✕</button>
-      <ul>
-        <li><a href="../index.html" onclick="closeMenu()">Home</a></li>
-        <li><a href="services.html" onclick="closeMenu()">Services</a></li>
-        <li><a href="case-studies.html" onclick="closeMenu()">Case Studies</a></li>
-        <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
-      </ul>
-      <a href="contact.html" class="mobile-cta">Start a Project ↗</a>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="../index.html" onclick="toggleNav()">Home</a>
+      <a href="services.html" onclick="toggleNav()">Services</a>
+      <a href="case-study.html" onclick="toggleNav()">Case Study</a>
+      <a href="contact.html" onclick="toggleNav()">Contact</a>
     </div>
-  </header>
+  </nav>
 
-  <section class="page-banner bg-ink">
-    <div class="g-wrap">
-      <div class="section-label light">CAPABILITIES</div>
-      <h1 class="page-banner-title">Precision in <em>Execution,</em><br/>Innovation in Thought.</h1>
-      <p class="page-banner-sub">We curate digital experiences that transcend the ordinary. Our services are the architectural pillars of modern brand authority.</p>
+  <section class="page-hero">
+    <div class="container">
+      <p class="label">CAPABILITIES</p>
+      <h1 class="page-title">Precision in <em>Execution,</em><br/>Innovation in Thought.</h1>
+      <p class="page-sub">We curate digital experiences that transcend the ordinary. Our services are the architectural pillars of modern brand authority.</p>
     </div>
   </section>
 
-<section class="services-list">
-  <div class="g-wrap">
+  <section class="services-section">
+    <div class="container">
 
-    <div class="svc-row">
-      <div class="svc-text">
-        <h2>Script Writing</h2>
-        <p>Crafting compelling narratives that communicate your brand message with clarity and impact.</p>
-      </div>
-      <div class="svc-img">
-        <img src="/images/scriptwritting.jpg">
-      </div>
-    </div>
-
-    <div class="svc-row reverse">
-      <div class="svc-text">
-        <h2>Video Editing</h2>
-        <p>High-quality editing that enhances storytelling through precision and visual consistency.</p>
-      </div>
-      <div class="svc-img">
-        <img src="/images/videoediting.jpg">
-      </div>
-    </div>
-
-    <div class="svc-row">
-      <div class="svc-text">
-        <h2>Digital Marketing</h2>
-        <p>Strategic campaigns designed to reach and convert your audience effectively.</p>
-      </div>
-      <div class="svc-img">
-        <img src="/images/digitalmarketting.jpg">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <section class="home-cta">
-    <div class="g-wrap home-cta-inner">
-      <div class="home-cta-text">
-        <div class="section-label">NEXT STEP</div>
-        <h2 class="display-heading">Ready to redefine<br/><em>your Precision?</em></h2>
-      </div>
-      <div class="home-cta-action">
-        <p>We're currently accepting projects for Q3 2025. Book a call and let's talk strategy.</p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <a href="contact.html" class="btn-fill">Book Strategy Call ↗</a>
-          <a href="#" class="btn-line">Download Portfolio</a>
+      <div class="svc-block">
+        <div class="svc-left">
+          <span class="svc-num">01 / NARRATIVE</span>
+          <h2 class="svc-title">Script Writing</h2>
+          <p class="svc-desc">Transforming complex ideas into compelling human narratives. We don't just write scripts; we build the emotional scaffolding for your brand's story.</p>
+          <ul class="svc-list">
+            <li>Conceptual Storyboarding</li>
+            <li>Brand Voice Development</li>
+            <li>Multi channel Dialogue</li>
+          </ul>
         </div>
+        <div class="svc-right">
+         <img src="../images/script.png" alt="Script Writing">
+        </div>
+      </div>
+
+      <div class="svc-block svc-block-reverse">
+        <div class="svc-left">
+          <span class="svc-num">02 / VISUALS</span>
+          <h2 class="svc-title">Video Editing</h2>
+          <p class="svc-desc">Precision-cut visuals that command attention. Our editing process focuses on rhythm, pacing, and color science to evoke specific psychological responses.</p>
+          <ul class="svc-tags-row">
+            <li>Dynamic Pacing</li>
+            <li>Advanced Color Grading</li>
+          </ul>
+          <p class="svc-tag-desc">Cinematic flow optimized for short-form and feature content.</p>
+          <p class="svc-tag-desc">Defining a unique visual palette for your brand's filmic presence.</p>
+        </div>
+        <div class="svc-right">
+         <img src="../images/video.png" alt="Video Editing">
+        </div>
+      </div>
+
+      <div class="svc-block">
+        <div class="svc-left">
+          <span class="svc-num">03 / GROWTH</span>
+          <h2 class="svc-title">Digital Marketing</h2>
+          <p class="svc-desc">Integrated ecosystem management focusing on community engagement and high-quality lead generation through creative organic strategies.</p>
+          <div class="svc-pills">
+            <span>SEO STRATEGY</span>
+            <span>SOCIAL ARCHITECTURE</span>
+          </div>
+        </div>
+        <div class="svc-right svc-right-duo"> 
+          <div class="duo-bottom blue-bg"><p> <B>It allows businesses to connect with potential customers in actual time, leveraging data to target specific audiences and measure campaign performance.</B></p> </div>
+         </div>
+      </div>
+
+      <div class="svc-block">
+        <div class="svc-left">
+          <span class="svc-num">05 / INNOVATION</span>
+          <h2 class="svc-title">Product Design</h2>
+          <p class="svc-desc">Creating intuitive digital products that marry ergonomic function with museum-grade aesthetics.</p>
+          <div class="product-grid">
+            <div class="pg-item">
+              <h4>UX Blueprinting</h4>
+              <p>Mapping journeys that eliminate friction and spark delight at every touchpoint.</p>
+            </div>
+            <div class="pg-item">
+             
+              <h4>UI Aesthetics</h4>
+              <p>Developing design systems that serve as a scalable source of truth.</p>
+            </div>
+            <div class="pg-item">
+             
+              <h4>Prototyping</h4>
+              <p>High-fidelity interactive models that visualize the future of your product.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Ready to redefine your Precision?</h2>
+      <p>Join the ranks of market leaders who prioritize intentional design and strategic clarity.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn-primary">Book Strategy Call</a>
+        <a href="#" class="btn-outline">Download Portfolio</a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="g-wrap footer-inner">
-      <div class="footer-brand">
-        <a href="../index.html" class="logo logo-light"><span class="logo-box logo-box-light">F</span>FORGE</a>
-        <p>Crafting digital authority<br/>for brands that lead.</p>
+    <div class="container footer-inner">
+      <a href="../index.html" class="logo logo-light">NEXUS</a>
+      <p class="footer-copy">© 2026 Nexus Agency. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="case-study.html">Case Study</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
       </div>
-      <div class="footer-nav">
-        <div class="footer-col"><h4>Pages</h4><ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>Services</h4><ul>
-          <li><a href="services.html">Script Writing</a></li>
-          <li><a href="services.html">Video Editing</a></li>
-          <li><a href="services.html">Digital Marketing</a></li>
-          <li><a href="services.html">Product Design</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>Connect</h4><ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="contact.html">hello@forge.studio</a></li>
-        </ul></div>
-      </div>
-    </div>
-    <div class="footer-bar g-wrap">
-      <p>© 2025 Forge Studio. All rights reserved.</p>
-      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
     </div>
   </footer>
 
-  <script src="../js/app.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

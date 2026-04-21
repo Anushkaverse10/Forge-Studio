@@ -1,155 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Forge Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Lora:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/base.css" />
-  <link rel="stylesheet" href="../css/contact.css" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — NEXUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
 
-  <header class="nav" id="siteNav">
+  <nav class="navbar" id="navbar">
     <div class="nav-wrap">
-      <a href="../index.html" class="logo"><span class="logo-box">F</span>FORGE</a>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="../index.html" class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="case-studies.html" class="nav-link">Case Studies</a></li>
-        <li><a href="contact.html" class="nav-link is-active">Contact</a></li>
+      <a href="../index.html" class="logo">NEXUS</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="case-study.html">Case Study</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
-      <a href="contact.html" class="nav-cta">Start a Project ↗</a>
-      <button class="burger" id="burgerBtn" onclick="openMenu()" aria-label="Open menu">
+      <a href="contact.html" class="btn-nav">Start a Project</a>
+      <button class="burger" id="burger" onclick="toggleNav()">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <div class="mobile-panel" id="mobilePanel">
-      <button class="mobile-close" onclick="closeMenu()">✕</button>
-      <ul>
-        <li><a href="../index.html" onclick="closeMenu()">Home</a></li>
-        <li><a href="services.html" onclick="closeMenu()">Services</a></li>
-        <li><a href="case-studies.html" onclick="closeMenu()">Case Studies</a></li>
-        <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
-      </ul>
-      <a href="contact.html" class="mobile-cta">Start a Project ↗</a>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="../index.html" onclick="toggleNav()">Home</a>
+      <a href="services.html" onclick="toggleNav()">Services</a>
+      <a href="case-study.html" onclick="toggleNav()">Case Study</a>
+      <a href="contact.html" onclick="toggleNav()">Contact</a>
     </div>
-  </header>
+  </nav>
 
-  <section class="contact-wrap">
-    <div class="g-wrap contact-grid">
+  <section class="contact-page">
+    <div class="container contact-grid">
 
       <div class="contact-left">
-        <div class="section-label">LET'S CONNECT</div>
-        <h1 class="contact-title">Let's Create<br/>Something<br/><em>Extraordinary.</em></h1>
-        <p class="contact-desc">Whether you're starting from zero or scaling to the next billion, we're here to curate your digital presence with surgical precision.</p>
+        <p class="label">LET'S CONNECT</p>
+        <h1 class="contact-title">Let's Create Something <em>Extraordinary.</em></h1>
+        <p class="contact-sub">Whether you're starting from zero or scaling to the next billion, we're here to curate your digital presence with surgical precision.</p>
 
-        <div class="contact-info-list">
-          <div class="ci-row">
-            <div class="ci-dot"></div>
-            <div>
-              <span class="ci-label">Email Us</span>
-              <p>hello@forge.studio</p>
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>FULL NAME</label>
+              <input type="text" id="fullName" placeholder="Your full name" required/>
+            </div>
+            <div class="form-group">
+              <label>EMAIL ADDRESS</label>
+              <input type="email" id="emailAddr" placeholder="hello@company.com" required/>
             </div>
           </div>
-          <div class="ci-row">
-            <div class="ci-dot"></div>
-            <div>
-              <span class="ci-label">Our Studio</span>
-              <p>Kolkata, India — Remote-first worldwide</p>
-            </div>
-          </div>
-          <div class="ci-row">
-            <div class="ci-dot"></div>
-            <div>
-              <span class="ci-label">Voice</span>
-              <p>+91 98765 43210</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-note">
-          <span class="cn-tag">IN-PERSON</span>
-          <p>"We host curated strategy sessions every Friday. Stop by for coffee."</p>
-        </div>
-      </div>
-
-      <div class="contact-right">
-        <form class="cform" id="contactForm" onsubmit="handleSubmit(event)" novalidate>
-          <div class="cform-row">
-            <div class="cform-field">
-              <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" placeholder="Your full name" required />
-            </div>
-            <div class="cform-field">
-              <label for="emailAddr">Email Address</label>
-              <input type="email" id="emailAddr" placeholder="you@company.com" required />
-            </div>
-          </div>
-          <div class="cform-field">
-            <label for="svcSelect">Service of Interest</label>
-            <select id="svcSelect">
-              <option value="" disabled selected>Select a service</option>
+          <div class="form-group">
+            <label>SERVICE OF INTEREST</label>
+            <select id="service">
+              <option value="" disabled selected>Digital Strategy</option>
               <option>Script Writing</option>
               <option>Video Editing</option>
               <option>Digital Marketing</option>
               <option>Performance Marketing</option>
               <option>Product Design</option>
-              <option>Multiple / Not Sure</option>
             </select>
           </div>
-          <div class="cform-field">
-            <label for="msgText">Your Message</label>
-            <textarea id="msgText" rows="5" placeholder="Tell us about your vision..."></textarea>
+          <div class="form-group">
+            <label>YOUR MESSAGE</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your vision..."></textarea>
           </div>
-          <button type="submit" class="btn-fill cform-submit">Send Brief ↗</button>
-          <p class="cform-success hidden" id="formSuccess">✓ We got your brief! Expect a reply within 24 hours.</p>
-          <p class="cform-error hidden" id="formError">Please fill in your name and email address.</p>
+          <button type="submit" class="btn-primary">Send Brief</button>
+          <p class="form-success hidden" id="formSuccess">✓ Message sent! We'll be in touch within 24 hours.</p>
         </form>
       </div>
+
+      <div class="contact-right">
+        <div class="contact-info-blocks">
+          <div class="info-block">
+            
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@nexus.agency</p>
+            </div>
+          </div>
+          <div class="info-block">
+            
+            <div>
+              <h4>Our Studio</h4>
+              <p>1221 Creative Way,<br/>Austin, TX 78701</p>
+            </div>
+          </div>
+          <div class="info-block">
+            
+            <div>
+              <h4>Voice</h4>
+              <p>+1 (555) 234-8900</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="inperson-note">
+          <span class="label">IN-PERSON</span>
+          <p>"We host curated strategy sessions every Friday. Stop by for coffee."</p>
+        </div>
+
+        <div class="contact-map-wrap">
+  <img src="../images/map.png" alt="Studio" class="contact-window"/>
+
+  <div class="map-pin">
+    Nexus Austin HQ
+  </div>
+</div>
 
     </div>
   </section>
 
-<section class="map-section">
-  <div class="g-wrap">
-    <img src="/images/map.jpg" alt="Office Location">
-  </div>
-</section>
-
   <footer class="footer">
-    <div class="g-wrap footer-inner">
-      <div class="footer-brand">
-        <a href="../index.html" class="logo logo-light"><span class="logo-box logo-box-light">F</span>FORGE</a>
-        <p>Crafting digital authority<br/>for brands that lead.</p>
+    <div class="container footer-inner">
+      <a href="../index.html" class="logo logo-light">NEXUS</a>
+      <p class="footer-copy">© 2026 Nexus Agency. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="case-study.html">Case Study</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
       </div>
-      <div class="footer-nav">
-        <div class="footer-col"><h4>Pages</h4><ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="case-studies.html">Case Studies</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>Services</h4><ul>
-          <li><a href="services.html">Script Writing</a></li>
-          <li><a href="services.html">Video Editing</a></li>
-          <li><a href="services.html">Digital Marketing</a></li>
-          <li><a href="services.html">Product Design</a></li>
-        </ul></div>
-        <div class="footer-col"><h4>Connect</h4><ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="contact.html">hello@forge.studio</a></li>
-        </ul></div>
-      </div>
-    </div>
-    <div class="footer-bar g-wrap">
-      <p>© 2025 Forge Studio. All rights reserved.</p>
-      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
     </div>
   </footer>
 
-  <script src="../js/app.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
