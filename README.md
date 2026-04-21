@@ -1,6 +1,6 @@
-Forge Studio – Static Website
+Nexus – Static Website
 Live Demo
-https://forge-studio-static-web-gdg-project.netlify.app/
+https://forge-studio-subt.vercel.app/
 
 Project Overview
 
@@ -27,16 +27,6 @@ static-web/
 │   └── contact.html
 
 ├── css/
-
-│   ├── base.css
-
-│   ├── home.css
-
-│   ├── services.css
-
-│   ├── case-studies.css
-
-│   └── contact.css
 
 ├── js/
 
